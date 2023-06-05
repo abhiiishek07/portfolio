@@ -1,8 +1,8 @@
 import React from "react";
-import dsa180 from "../assets/180dsa.png";
-import devsfordev from "../assets/devsfordev.png";
-import recipeFinder from "../assets/recipeFinder.png";
-import youtube from "../assets/youtube.png";
+import DSA180 from "../assets/180dsa.png";
+import Devsfordev from "../assets/devsfordev.png";
+import RecipeFinder from "../assets/recipeFinder.png";
+import Youtube from "../assets/youtube.png";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 function Projects() {
@@ -10,28 +10,28 @@ function Projects() {
     {
       id: 0,
       title: "180dsa",
-      src: dsa180,
+      src: DSA180,
       githubLink: "https://github.com/abhiiishek07/180DSA",
       liveLink: "https://180dsa.netlify.app/",
     },
     {
       id: 1,
       title: "DevsForDev",
-      src: devsfordev,
+      src: Devsfordev,
       githubLink: "https://github.com/abhiiishek07/devs_for_dev",
       liveLink: "https://devsfordev.netlify.app/",
     },
     {
       id: 2,
       title: "Basic Youtube",
-      src: youtube,
+      src: Youtube,
       githubLink: "https://github.com/abhiiishek07/grocare_assignment",
       liveLink: "https://grocaretube.netlify.app/",
     },
     {
       id: 3,
       title: "Recipe Finder",
-      src: recipeFinder,
+      src: RecipeFinder,
       githubLink: "https://github.com/abhiiishek07/recipefinder",
       liveLink: "https://abhiiishek07.github.io/recipefinder/recipefinder",
     },

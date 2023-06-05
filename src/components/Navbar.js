@@ -17,7 +17,7 @@ function Navbar() {
     },
     {
       id: 3,
-      link: "Technologies",
+      link: "Skills",
     },
     {
       id: 4,

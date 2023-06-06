@@ -6,7 +6,7 @@ import Youtube from "../assets/youtube.png";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 function Projects() {
-  const projectsRef = [
+  const projectsArr = [
     {
       id: 0,
       title: "180dsa",
@@ -38,8 +38,8 @@ function Projects() {
   ];
   return (
     <div
-      name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      name="Projects"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-fit"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -49,9 +49,9 @@ function Projects() {
           <p className="py-6">Check out some of my work here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 md:px-0">
-          {projectsRef.map(({ id, title, src, githubLink, liveLink }) => {
+          {projectsArr.map(({ id, title, src, githubLink, liveLink }) => {
             return (
-              <div className="shadow-md shadow-gray-500 rounded-lg">
+              <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
                 <img
                   src={src}
                   alt="project"

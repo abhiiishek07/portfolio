@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import SocialMedia from "./components/SocialMedia";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <Contact />
       <SocialMedia />
     </div>
   );

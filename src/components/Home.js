@@ -1,6 +1,7 @@
 import React from "react";
 import profilePic from "../assets/profile_pic.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
             Currently, I'm also expanding my skill set by learning Golang to
             further enhance my abilities in back-end development.
           </p>
-          <div>
+          <div className="hidden md:flex">
             <Link to="Projects" smooth duration={500}>
               <button className="group text-white font-bold width-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-300 to-orange-500 cursor-pointer">
                 Projects{" "}
@@ -28,6 +29,16 @@ function Home() {
                 </span>
               </button>
             </Link>
+          </div>
+
+          <div className="md:hidden w-fit">
+            <a
+              className="group text-white font-bold  px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-300 to-orange-500 cursor-pointer"
+              download="true"
+              href="/resume.pdf"
+            >
+              Resume <BsFillPersonLinesFill size={20} className="ml-3" />
+            </a>
           </div>
         </div>
         <div>
